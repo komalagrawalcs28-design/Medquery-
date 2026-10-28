@@ -1,0 +1,59 @@
+{
+  "standard_test_metrics": {
+    "top_1_accuracy": 0.9762,
+    "top_3_accuracy": 0.9762,
+    "top_5_accuracy": 1.0,
+    "macro_precision": 0.9878,
+    "macro_recall": 0.9878,
+    "macro_f1": 0.9837,
+    "weighted_f1": 0.9762,
+    "sample_count": 42
+  },
+  "adaptive_simulation": {
+    "initial_symptom_count": 1,
+    "sample_count": 42,
+    "trajectory": [
+      {
+        "followup_turn": 0,
+        "label": "Initial Incomplete",
+        "top_1_accuracy": 0.5,
+        "top_3_accuracy": 0.7619,
+        "mean_entropy": 4.465
+      },
+      {
+        "followup_turn": 1,
+        "label": "After Q1",
+        "top_1_accuracy": 0.5476,
+        "top_3_accuracy": 0.8095,
+        "mean_entropy": 4.215
+      },
+      {
+        "followup_turn": 2,
+        "label": "After Q2",
+        "top_1_accuracy": 0.5952,
+        "top_3_accuracy": 0.8095,
+        "mean_entropy": 3.812
+      },
+      {
+        "followup_turn": 3,
+        "label": "After Q3",
+        "top_1_accuracy": 0.5952,
+        "top_3_accuracy": 0.8095,
+        "mean_entropy": 3.516
+      },
+      {
+        "followup_turn": 4,
+        "label": "After Q4",
+        "top_1_accuracy": 0.619,
+        "top_3_accuracy": 0.8333,
+        "mean_entropy": 3.222
+      }
+    ],
+    "baseline_top1": 0.5,
+    "final_adaptive_top1": 0.619,
+    "accuracy_gain_top1": 0.119,
+    "baseline_top3": 0.7619,
+    "final_adaptive_top3": 0.8333,
+    "accuracy_gain_top3": 0.0714
+  }
+}
